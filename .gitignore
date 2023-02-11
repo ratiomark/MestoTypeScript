@@ -1,0 +1,6 @@
+node_modules
+dist 
+styles
+BEMgeneratorFromCSS V2.py
+./src/scripts/app.js
+./src/scripts/validation.js

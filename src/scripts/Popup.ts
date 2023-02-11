@@ -16,12 +16,12 @@ export class Popup implements IPopup {
     Popup._handleEscClose = Popup._handleEscClose.bind(this)
   }
 
-  public static open(obj?: Object): void {
+  static open(obj?: Object): void {
     Popup._popup.classList.add('popup_active')
     document.addEventListener('keydown', this._handleEscClose)
   }
 
-  public static close() {
+  static close() {
     this._popup.classList.remove('popup_active')
     document.removeEventListener("keydown", this._handleEscClose)
   }
@@ -38,7 +38,7 @@ export class Popup implements IPopup {
     }
   }
 
-  public static setEventListeners() {
+  static setEventListeners() {
     Popup._popup.querySelector('.popup__close-button').addEventListener("click", this.close.bind(this))
     Popup._popup.addEventListener('click', this._handleCloseByOverlay.bind(this))
   }

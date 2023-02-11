@@ -6,13 +6,6 @@ type OpenProps = {
   alt: string;
 }
 
-// interface IPopupWithImage {
-//   _imgPopupShowCard: HTMLImageElement;
-//   _descriptionPopupShowCard: HTMLParagraphElement;
-//   open({ link, name, alt }: OpenProps): void;
-// }
-
-// export class PopupWithImage extends Popup implements IPopupWithImage {
 export class PopupWithImage extends Popup {
   static _imgPopupShowCard: HTMLImageElement;
   static _descriptionPopupShowCard: HTMLParagraphElement;

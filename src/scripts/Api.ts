@@ -2,7 +2,7 @@ interface IConstructorApi {
   baseUrl: string;
   headers: HeadersInit;
 }
-// редактирование профиля и картинки
+
 interface StudentResponse {
   _id: string;
   name: string;
@@ -11,11 +11,8 @@ interface StudentResponse {
   cohort: string;
 }
 
-
-
-
 type CardDeletedResponse = { message: string }
-// добавление, лайк, анлайк
+
 export interface CardResponse {
   _id: string;
   name: string;

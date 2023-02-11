@@ -1,14 +1,4 @@
-interface IPopup {
-  // static _popup: HTMLElement;
-  // open(): void
-  // close(): void
-  // _handleEscClose(event: KeyboardEvent): void;
-  // _handleCloseByOverlay(event: MouseEvent): void;
-  // setEventListeners(): void
-}
-
-export class Popup implements IPopup {
-
+export class Popup {
   static _popup: HTMLElement
 
   constructor(popupSelector: string) {
@@ -22,7 +12,7 @@ export class Popup implements IPopup {
   }
 
   static close() {
-    this._popup.classList.remove('popup_active')
+    Popup._popup.classList.remove('popup_active')
     document.removeEventListener("keydown", this._handleEscClose)
   }
 
